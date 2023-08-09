@@ -42,7 +42,7 @@ const OrdersTable: FC<Props> = ({
           blockWidths[blockWidth]
         )}
       >
-        <caption className="cadio-sr-only">Your Orders</caption>
+        <caption className="cadoi-sr-only">Your Orders</caption>
         {children}
       </table>
     </div>
