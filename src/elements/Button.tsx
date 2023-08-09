@@ -9,7 +9,7 @@ const Button: FC<ButtonProps> = ({ children, ...props }) => {
   return (
     <button
       {...buttonProps}
-      className={`${className} CatraButton CatraButton--primary catra-py-2 catra-px-3 catra-inline-flex catra-justify-center catra-items-center catra-gap-2 catra-rounded-md catra-border catra-border-transparent catra-font-semibold catra-bg-primary-btn-bg catra-text-primary-btn-text hover:catra-bg-primary-btn-bg-hover focus:catra-outline-none focus:catra-ring-2 focus:catra-ring-primary-btn-bg focus:catra-ring-offset-2 catra-transition-all catra-text-sm catra-h-10 hover:catra-text-primary-btn-text-hover disabled:catra-opacity-75 disabled:catra-cursor-not-allowed disabled:catra-bg-primary-btn-bg disabled:catra-text-primary-btn-text`}
+      className={`${className} CadoiButton CadoiButton--primary cadoi-py-2 cadoi-px-3 cadoi-inline-flex cadoi-justify-center cadoi-items-center cadoi-gap-2 cadoi-rounded-md cadoi-border cadoi-border-transparent cadoi-font-semibold cadoi-bg-primary-btn-bg cadoi-text-primary-btn-text hover:cadoi-bg-primary-btn-bg-hover focus:cadoi-outline-none focus:cadoi-ring-2 focus:cadoi-ring-primary-btn-bg focus:cadoi-ring-offset-2 cadoi-transition-all cadoi-text-sm cadoi-h-10 hover:cadoi-text-primary-btn-text-hover disabled:cadoi-opacity-75 disabled:cadoi-cursor-not-allowed disabled:cadoi-bg-primary-btn-bg disabled:cadoi-text-primary-btn-text`}
     >
       {children}
     </button>
