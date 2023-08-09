@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2019", // Specify the ECMAScript target version
+    "module": "commonjs", // Specify the module system (e.g., "commonjs", "es2015", "umd")
+    "lib": ["dom", "dom.iterable", "es2019"], // Specify the available library typings
+    "declaration": true,
+    "outDir": "dist", // Specify the output directory for compiled files
+    "declarationDir": "dist/types",
+    "esModuleInterop": true, // Enable compatibility with CommonJS modules
+    // Uncomment the following line if you're using React and JSX
+    "jsx": "react-jsx",
+    "strict": true, // Enable strict type-checking options
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true // Ensure consistent file name casing
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules", // Exclude the "node_modules" directory from compilation
+    "dist"
+  ]
+}

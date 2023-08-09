@@ -1,0 +1,25 @@
+{
+  "name": "@conspireagencyteam/draft-shared",
+  "version": "0.0.0",
+  "license": "All Rights Reserved, Conspire LLC",
+  "main": "dist/elements/index.js",
+  "module": "dist/elements/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "tsc && NODE_ENV=production tailwindcss build src/draft-shared.scss -o dist/draft-shared.scss"
+  },
+  "dependencies": {
+    "classname": "^0.0.0",
+    "classnames": "^2.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-hook-form": "^7.45.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.12",
+    "@types/react-dom": "^18.2.6",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.0.4"
+  }
+}
