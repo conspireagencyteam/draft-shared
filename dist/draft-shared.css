@@ -1,0 +1,107 @@
+.cadoi-inline-flex {
+  display: inline-flex
+}
+
+.cadoi-h-10 {
+  height: 40px
+}
+
+.cadoi-items-center {
+  align-items: center
+}
+
+.cadoi-justify-center {
+  justify-content: center
+}
+
+.cadoi-gap-2 {
+  gap: 8px
+}
+
+.cadoi-rounded-md {
+  border-radius: 6px
+}
+
+.cadoi-border {
+  border-width: 1px
+}
+
+.cadoi-border-transparent {
+  border-color: transparent
+}
+
+.cadoi-bg-primary-btn-bg {
+  background-color: rgba(var(--cadoi-primary-btn-bg-rgb), 1)
+}
+
+.cadoi-px-3 {
+  padding-left: 12px;
+  padding-right: 12px
+}
+
+.cadoi-py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px
+}
+
+.cadoi-text-sm {
+  font-size: 14px;
+  line-height: 20px
+}
+
+.cadoi-font-semibold {
+  font-weight: 600
+}
+
+.cadoi-text-primary-btn-text {
+  color: rgba(var(--cadoi-primary-btn-text-rgb), 1)
+}
+
+.cadoi-transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
+.hover\:cadoi-bg-primary-btn-bg-hover:hover {
+  background-color: rgba(var(--cadoi-primary-btn-bg-hover-rgb), 1)
+}
+
+.hover\:cadoi-text-primary-btn-text-hover:hover {
+  color: rgba(var(--cadoi-primary-btn-text-hover-rgb), 1)
+}
+
+.focus\:cadoi-outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px
+}
+
+.focus\:cadoi-ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
+}
+
+.focus\:cadoi-ring-primary-btn-bg:focus {
+  --tw-ring-color: rgba(var(--cadoi-primary-btn-bg-rgb), 1)
+}
+
+.focus\:cadoi-ring-offset-2:focus {
+  --tw-ring-offset-width: 2px
+}
+
+.disabled\:cadoi-cursor-not-allowed:disabled {
+  cursor: not-allowed
+}
+
+.disabled\:cadoi-bg-primary-btn-bg:disabled {
+  background-color: rgba(var(--cadoi-primary-btn-bg-rgb), 1)
+}
+
+.disabled\:cadoi-text-primary-btn-text:disabled {
+  color: rgba(var(--cadoi-primary-btn-text-rgb), 1)
+}
+
+.disabled\:cadoi-opacity-75:disabled {
+  opacity: 0.75
+}

@@ -6,7 +6,7 @@
   "module": "dist/elements/index.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
-    "build": "tsc && NODE_ENV=production tailwindcss build src/draft-shared.scss -o dist/draft-shared.scss"
+    "build": "tsc && NODE_ENV=production tailwindcss build src/draft-shared.css -o dist/draft-shared.css"
   },
   "dependencies": {
     "classname": "^0.0.0",
