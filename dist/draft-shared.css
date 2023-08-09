@@ -1,3 +1,60 @@
+.cadoi-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--cadoi-container-padding-x);
+  padding-left: var(--cadoi-container-padding-x)
+}
+
+@media (min-width: 640px) {
+  .cadoi-container {
+    max-width: 640px
+  }
+}
+
+@media (min-width: 768px) {
+  .cadoi-container {
+    max-width: 768px
+  }
+}
+
+@media (min-width: 1024px) {
+  .cadoi-container {
+    max-width: 1024px
+  }
+}
+
+@media (min-width: 1280px) {
+  .cadoi-container {
+    max-width: 1280px
+  }
+}
+
+@media (min-width: 1536px) {
+  .cadoi-container {
+    max-width: 1536px
+  }
+}
+
+.-cadoi-mx-2 {
+  margin-left: -8px;
+  margin-right: -8px
+}
+
+.-cadoi-mx-2\.5 {
+  margin-left: -10px;
+  margin-right: -10px
+}
+
+.cadoi-my-10 {
+  margin-top: 40px;
+  margin-bottom: 40px
+}
+
+.cadoi-flex {
+  display: flex
+}
+
 .cadoi-inline-flex {
   display: inline-flex
 }
@@ -6,8 +63,20 @@
   height: 40px
 }
 
+.cadoi-table-auto {
+  table-layout: auto
+}
+
+.cadoi-flex-wrap {
+  flex-wrap: wrap
+}
+
 .cadoi-items-center {
   align-items: center
+}
+
+.cadoi-justify-end {
+  justify-content: flex-end
 }
 
 .cadoi-justify-center {
@@ -18,12 +87,24 @@
   gap: 8px
 }
 
+.cadoi-whitespace-nowrap {
+  white-space: nowrap
+}
+
 .cadoi-rounded-md {
   border-radius: 6px
 }
 
 .cadoi-border {
   border-width: 1px
+}
+
+.cadoi-border-b {
+  border-bottom-width: 1px
+}
+
+.cadoi-border-primary-border {
+  border-color: rgba(var(--cadoi-primary-border-rgb), 1)
 }
 
 .cadoi-border-transparent {
@@ -34,9 +115,18 @@
   background-color: rgba(var(--cadoi-primary-btn-bg-rgb), 1)
 }
 
+.cadoi-bg-secondary-bg {
+  background-color: rgba(var(--cadoi-secondary-bg-rgb), 1)
+}
+
 .cadoi-px-3 {
   padding-left: 12px;
   padding-right: 12px
+}
+
+.cadoi-px-4 {
+  padding-left: 16px;
+  padding-right: 16px
 }
 
 .cadoi-py-2 {
@@ -44,17 +134,47 @@
   padding-bottom: 8px
 }
 
+.cadoi-py-3 {
+  padding-top: 12px;
+  padding-bottom: 12px
+}
+
+.cadoi-text-left {
+  text-align: left
+}
+
 .cadoi-text-sm {
   font-size: 14px;
   line-height: 20px
+}
+
+.cadoi-text-xs {
+  font-size: 12px;
+  line-height: 18px
+}
+
+.cadoi-font-medium {
+  font-weight: 500
 }
 
 .cadoi-font-semibold {
   font-weight: 600
 }
 
+.cadoi-uppercase {
+  text-transform: uppercase
+}
+
 .cadoi-text-primary-btn-text {
   color: rgba(var(--cadoi-primary-btn-text-rgb), 1)
+}
+
+.cadoi-text-primary-text {
+  color: rgba(var(--cadoi-primary-text-rgb), 1)
+}
+
+.cadoi-text-secondary-text {
+  color: rgba(var(--cadoi-secondary-text-rgb), 1)
 }
 
 .cadoi-transition-all {
