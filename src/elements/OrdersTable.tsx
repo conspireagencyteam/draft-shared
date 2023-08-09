@@ -3,18 +3,18 @@ import { JustifyContent, BlockWidth } from 'src/types';
 import cn from 'classnames';
 
 const blockWidths = {
-  9: 'catra-w-full md:catra-w-9/12',
-  10: 'catra-w-full md:catra-w-10/12',
-  11: 'catra-w-full md:catra-w-11/12',
-  12: 'catra-w-full',
+  9: 'cadoi-w-full md:cadoi-w-9/12',
+  10: 'cadoi-w-full md:cadoi-w-10/12',
+  11: 'cadoi-w-full md:cadoi-w-11/12',
+  12: 'cadoi-w-full',
 };
 
 const justifyContent = {
-  'start': 'catra-justify-start',
-  'end': 'catra-justify-end',
-  'center': 'catra-justify-center',
-  'space-between': 'catra-justify-between',
-  'space-evenly': 'catra-justify-evenly',
+  'start': 'cadoi-justify-start',
+  'end': 'cadoi-justify-end',
+  'center': 'cadoi-justify-center',
+  'space-between': 'cadoi-justify-between',
+  'space-evenly': 'cadoi-justify-evenly',
 };
 interface Props extends TableHTMLAttributes<HTMLTableElement> {
   children: React.ReactNode | React.ReactNode[];

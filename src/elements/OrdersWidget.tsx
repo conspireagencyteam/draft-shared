@@ -5,7 +5,7 @@ interface Props {
 }
 
 export const OrdersWidget: FC<Props> = ({ children }) => (
-  <section className="catra-py-16">{children}</section>
+  <section className="cadoi-py-16">{children}</section>
 );
 
 export default OrdersWidget;

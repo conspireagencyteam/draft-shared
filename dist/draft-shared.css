@@ -63,6 +63,10 @@
   height: 40px
 }
 
+.cadoi-w-full {
+  width: 100%
+}
+
 .cadoi-table-auto {
   table-layout: auto
 }
@@ -75,12 +79,24 @@
   align-items: center
 }
 
+.cadoi-justify-start {
+  justify-content: flex-start
+}
+
 .cadoi-justify-end {
   justify-content: flex-end
 }
 
 .cadoi-justify-center {
   justify-content: center
+}
+
+.cadoi-justify-between {
+  justify-content: space-between
+}
+
+.cadoi-justify-evenly {
+  justify-content: space-evenly
 }
 
 .cadoi-gap-2 {
@@ -127,6 +143,11 @@
 .cadoi-px-4 {
   padding-left: 16px;
   padding-right: 16px
+}
+
+.cadoi-py-16 {
+  padding-top: 64px;
+  padding-bottom: 64px
 }
 
 .cadoi-py-2 {
@@ -224,4 +245,18 @@
 
 .disabled\:cadoi-opacity-75:disabled {
   opacity: 0.75
+}
+
+@media (min-width: 768px) {
+  .md\:cadoi-w-10\/12 {
+    width: 83.333333%
+  }
+
+  .md\:cadoi-w-11\/12 {
+    width: 91.666667%
+  }
+
+  .md\:cadoi-w-9\/12 {
+    width: 75%
+  }
 }
