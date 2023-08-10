@@ -4,7 +4,7 @@ interface Props {
   orderLink: string;
   orderName: string;
   orderCreatedAt: string;
-  orderTotalNetAmount: string;
+  orderTotalNetAmount: string | React.ReactNode | React.ReactNode[];
 }
 
 const OrderItemInfo: FC<Props> = ({
