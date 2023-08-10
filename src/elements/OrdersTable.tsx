@@ -38,7 +38,7 @@ const OrdersTable: FC<Props> = ({
       <table
         {...attrs}
         className={cn(
-          'CadoiOrdersTable cadoi-table-auto cadoi-text-sm cadoi-text-left cadoi-text-secondary-text',
+          'CadoiOrdersTable cadoi-border-collapse cadoi-indent-0 cadoi-border-inherit cadoi-table-auto cadoi-text-sm cadoi-text-left cadoi-text-secondary-text',
           blockWidths[blockWidth]
         )}
       >

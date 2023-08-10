@@ -15,11 +15,9 @@ const OrderItemInfo: FC<Props> = ({
 }) => {
   return (
     <>
-      <th
-        className="cadoi-px-4 cadoi-py-3 cadoi-font-medium cadoi-text-primary-text cadoi-whitespace-nowrap"
-        scope="row"
-      >
+      <th className="cadoi-px-4 cadoi-py-3 cadoi-whitespace-nowrap" scope="row">
         <a
+          className="cadoi-font-medium cadoi-text-primary-text cadoi-no-underline"
           href={orderLink}
           aria-label={`Order number ${orderName}`}
           data-label="Invoice"

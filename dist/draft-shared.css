@@ -83,6 +83,10 @@
   table-layout: auto
 }
 
+.cadoi-border-collapse {
+  border-collapse: collapse
+}
+
 .cadoi-flex-wrap {
   flex-wrap: wrap
 }
@@ -131,6 +135,10 @@
   border-bottom-width: 1px
 }
 
+.cadoi-border-inherit {
+  border-color: inherit
+}
+
 .cadoi-border-primary-border {
   border-color: rgba(var(--cadoi-primary-border-rgb), 1)
 }
@@ -176,6 +184,10 @@
   text-align: left
 }
 
+.cadoi-indent-0 {
+  text-indent: 0px
+}
+
 .cadoi-text-sm {
   font-size: 14px;
   line-height: 20px
@@ -208,6 +220,10 @@
 
 .cadoi-text-secondary-text {
   color: rgba(var(--cadoi-secondary-text-rgb), 1)
+}
+
+.cadoi-no-underline {
+  text-decoration-line: none
 }
 
 .cadoi-transition-all {

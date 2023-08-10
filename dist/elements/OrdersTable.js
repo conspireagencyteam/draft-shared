@@ -19,6 +19,6 @@ const justifyContent = {
     'space-evenly': 'cadoi-justify-evenly',
 };
 const OrdersTable = ({ children, blockDistribution, blockWidth, ...attrs }) => {
-    return ((0, jsx_runtime_1.jsx)("div", { className: (0, classnames_1.default)('cadoi-container cadoi-flex cadoi-flex-wrap cadoi-my-10 -cadoi-mx-2.5', justifyContent[blockDistribution]), children: (0, jsx_runtime_1.jsxs)("table", { ...attrs, className: (0, classnames_1.default)('CadoiOrdersTable cadoi-table-auto cadoi-text-sm cadoi-text-left cadoi-text-secondary-text', blockWidths[blockWidth]), children: [(0, jsx_runtime_1.jsx)("caption", { className: "cadoi-sr-only", children: "Your Orders" }), children] }) }));
+    return ((0, jsx_runtime_1.jsx)("div", { className: (0, classnames_1.default)('cadoi-container cadoi-flex cadoi-flex-wrap cadoi-my-10 -cadoi-mx-2.5', justifyContent[blockDistribution]), children: (0, jsx_runtime_1.jsxs)("table", { ...attrs, className: (0, classnames_1.default)('CadoiOrdersTable cadoi-border-collapse cadoi-indent-0 cadoi-border-inherit cadoi-table-auto cadoi-text-sm cadoi-text-left cadoi-text-secondary-text', blockWidths[blockWidth]), children: [(0, jsx_runtime_1.jsx)("caption", { className: "cadoi-sr-only", children: "Your Orders" }), children] }) }));
 };
 exports.default = OrdersTable;
