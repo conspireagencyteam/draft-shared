@@ -31,7 +31,7 @@ const OrdersTable: FC<Props> = ({
   return (
     <div
       className={cn(
-        'cadoi-container cadoi-flex cadoi-flex-wrap cadoi-my-10 -cadoi-mx-2.5',
+        'cadoi-flex cadoi-flex-wrap cadoi-my-10',
         justifyContent[blockDistribution]
       )}
     >
