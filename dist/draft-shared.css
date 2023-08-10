@@ -1,41 +1,3 @@
-.cadoi-container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: var(--cadoi-container-padding-x);
-  padding-left: var(--cadoi-container-padding-x)
-}
-
-@media (min-width: 640px) {
-  .cadoi-container {
-    max-width: 640px
-  }
-}
-
-@media (min-width: 768px) {
-  .cadoi-container {
-    max-width: 768px
-  }
-}
-
-@media (min-width: 1024px) {
-  .cadoi-container {
-    max-width: 1024px
-  }
-}
-
-@media (min-width: 1280px) {
-  .cadoi-container {
-    max-width: 1280px
-  }
-}
-
-@media (min-width: 1536px) {
-  .cadoi-container {
-    max-width: 1536px
-  }
-}
-
 .cadoi-sr-only {
   position: absolute;
   width: 1px;
@@ -46,16 +8,6 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0
-}
-
-.-cadoi-mx-2 {
-  margin-left: -8px;
-  margin-right: -8px
-}
-
-.-cadoi-mx-2\.5 {
-  margin-left: -10px;
-  margin-right: -10px
 }
 
 .cadoi-my-10 {
