@@ -77,9 +77,12 @@ export type OrdersStyleKey = OrdersStyleColorKey;
 export type OrdersBlockEditableSettingsKey = 'headingCol1' | 'headingCol2' | 'headingCol3' | 'headingCol4' | 'payButtonText';
 export type EmailReminders = 'activate' | 'deactivate';
 export type EmailReminderAfter = '7 Days' | '14 Days' | '30 Days';
+export interface DashboardSettings {
+    emailReminders: EmailReminders;
+    emailReminderAfter: EmailReminderAfter;
+}
 export interface Dashboard {
     draftOrders: number;
     lastFullSync: string;
-    emailReminders: EmailReminders;
-    emailReminderAfter: EmailReminderAfter;
+    settings: DashboardSettings;
 }
