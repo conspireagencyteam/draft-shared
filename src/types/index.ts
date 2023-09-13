@@ -115,3 +115,14 @@ export type OrdersBlockEditableSettingsKey =
   | 'headingCol3'
   | 'headingCol4'
   | 'payButtonText';
+
+/* Dashboard */
+export type EmailReminders = 'activate' | 'deactivate';
+export type EmailReminderAfter = '7 Days' | '14 Days' | '30 Days';
+
+export interface Dashboard {
+  draftOrders: number;
+  lastFullSync: string;
+  emailReminders: EmailReminders;
+  emailReminderAfter: EmailReminderAfter;
+}
