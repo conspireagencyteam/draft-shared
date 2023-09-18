@@ -75,14 +75,17 @@ export type OrdersBlockKey = keyof OrdersComposition['blocks'];
 export type OrdersStyleColorKey = 'general.primaryTextColor.rgb' | 'general.secondaryTextColor.rgb' | 'general.primaryBgColor.rgb' | 'general.secondaryBgColor.rgb' | 'general.primaryBorderColor.rgb' | 'general.primaryBtnBgColor.rgb' | 'general.primaryBtnTextColor.rgb' | 'general.primaryBtnBgHoverColor.rgb' | 'general.primaryBtnTextHoverColor.rgb';
 export type OrdersStyleKey = OrdersStyleColorKey;
 export type OrdersBlockEditableSettingsKey = 'headingCol1' | 'headingCol2' | 'headingCol3' | 'headingCol4' | 'payButtonText';
-export type EmailReminders = 'activate' | 'deactivate';
-export type EmailReminderAfter = '7 Days' | '14 Days' | '30 Days';
+export type EmailReminders = boolean;
+export type EmailPeriod = '7' | '14' | '30';
+export type InstallSetting = boolean;
 export interface DashboardSettings {
-    emailReminders: EmailReminders;
-    emailReminderAfter: EmailReminderAfter;
+    email: EmailReminders;
+    email_period: EmailPeriod;
+    installSetting: InstallSetting;
 }
 export interface Dashboard {
-    draftOrders: number;
-    lastFullSync: string;
+    draftsCount: number;
+    last30: number;
+    lastSync: string;
     settings: DashboardSettings;
 }
