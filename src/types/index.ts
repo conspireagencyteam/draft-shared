@@ -90,8 +90,11 @@ export interface OrdersComposition {
 }
 
 export interface OrdersSettings {
-  style: OrdersStyle;
-  composition: OrdersComposition;
+  titleText: string;
+  widget_settings: {
+    style: OrdersStyle;
+    composition: OrdersComposition;
+  };
 }
 
 export type OrdersBlockKey = keyof OrdersComposition['blocks'];

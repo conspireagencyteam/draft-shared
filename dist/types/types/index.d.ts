@@ -68,8 +68,11 @@ export interface OrdersComposition {
     blockOrder: (keyof OrdersComposition['blocks'])[];
 }
 export interface OrdersSettings {
-    style: OrdersStyle;
-    composition: OrdersComposition;
+    titleText: string;
+    widget_settings: {
+        style: OrdersStyle;
+        composition: OrdersComposition;
+    };
 }
 export type OrdersBlockKey = keyof OrdersComposition['blocks'];
 export type OrdersStyleColorKey = 'general.primaryTextColor.rgb' | 'general.secondaryTextColor.rgb' | 'general.primaryBgColor.rgb' | 'general.secondaryBgColor.rgb' | 'general.primaryBorderColor.rgb' | 'general.primaryBtnBgColor.rgb' | 'general.primaryBtnTextColor.rgb' | 'general.primaryBtnBgHoverColor.rgb' | 'general.primaryBtnTextHoverColor.rgb';
