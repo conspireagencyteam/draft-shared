@@ -1,6 +1,6 @@
 {
   "name": "@conspireagencyteam/draft-shared",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "All Rights Reserved, Conspire LLC",
   "main": "dist/elements/index.js",
   "module": "dist/elements/index.js",
