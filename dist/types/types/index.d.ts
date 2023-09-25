@@ -68,7 +68,6 @@ export interface OrdersComposition {
     blockOrder: (keyof OrdersComposition['blocks'])[];
 }
 export interface OrdersSettings {
-    titleText: string;
     widget_settings: {
         style: OrdersStyle;
         composition: OrdersComposition;
