@@ -3,9 +3,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.OrdersWidget = exports.OrdersTableHead = exports.OrdersTable = exports.OrderItemInfo = exports.OrderItemActions = exports.OrderItem = exports.Button = void 0;
+exports.OrdersWidget = exports.OrdersTableHead = exports.OrdersTable = exports.OrderItemInfo = exports.OrderItemActions = exports.OrderItem = exports.ButtonLink = exports.Button = void 0;
 const Button_1 = __importDefault(require("./Button"));
 exports.Button = Button_1.default;
+const ButtonLink_1 = __importDefault(require("./ButtonLink"));
+exports.ButtonLink = ButtonLink_1.default;
 const OrderItem_1 = __importDefault(require("./OrderItem"));
 exports.OrderItem = OrderItem_1.default;
 const OrderItemActions_1 = __importDefault(require("./OrderItemActions"));
