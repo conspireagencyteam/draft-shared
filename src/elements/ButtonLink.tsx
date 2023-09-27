@@ -1,10 +1,10 @@
 import { AnchorHTMLAttributes, FC, ReactNode } from 'react';
 
-interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: ReactNode | ReactNode[];
 }
 
-const Button: FC<ButtonProps> = ({ children, ...props }) => {
+const ButtonLink: FC<Props> = ({ children, ...props }) => {
   const { className, ...anchorProps } = { ...props };
   return (
     <a
@@ -16,4 +16,4 @@ const Button: FC<ButtonProps> = ({ children, ...props }) => {
   );
 };
 
-export default Button;
+export default ButtonLink;

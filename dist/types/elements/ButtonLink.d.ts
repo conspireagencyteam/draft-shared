@@ -1,6 +1,6 @@
 import { AnchorHTMLAttributes, FC, ReactNode } from 'react';
-interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
     children: ReactNode | ReactNode[];
 }
-declare const Button: FC<ButtonProps>;
-export default Button;
+declare const ButtonLink: FC<Props>;
+export default ButtonLink;
