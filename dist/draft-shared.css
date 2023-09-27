@@ -7,236 +7,276 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  border-width: 0
+  border-width: 0;
 }
 
 .cadoi-my-10 {
   margin-top: 40px;
-  margin-bottom: 40px
+  margin-bottom: 40px;
 }
 
 .cadoi-flex {
-  display: flex
+  display: flex;
 }
 
 .cadoi-inline-flex {
-  display: inline-flex
+  display: inline-flex;
+}
+
+.cadoi-hidden {
+  display: none;
 }
 
 .cadoi-h-9 {
-  height: 36px
+  height: 36px;
 }
 
 .cadoi-w-full {
-  width: 100%
+  width: 100%;
 }
 
 .cadoi-table-auto {
-  table-layout: auto
+  table-layout: auto;
 }
 
 .cadoi-border-collapse {
-  border-collapse: collapse
+  border-collapse: collapse;
+}
+
+.cadoi-flex-col {
+  flex-direction: column;
 }
 
 .cadoi-flex-wrap {
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .cadoi-items-center {
-  align-items: center
+  align-items: center;
 }
 
 .cadoi-justify-start {
-  justify-content: flex-start
+  justify-content: flex-start;
 }
 
 .cadoi-justify-end {
-  justify-content: flex-end
+  justify-content: flex-end;
 }
 
 .cadoi-justify-center {
-  justify-content: center
+  justify-content: center;
 }
 
 .cadoi-justify-between {
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .cadoi-justify-evenly {
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
 
 .cadoi-gap-2 {
-  gap: 8px
+  gap: 8px;
 }
 
 .cadoi-whitespace-nowrap {
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .cadoi-rounded-md {
-  border-radius: 6px
+  border-radius: 6px;
 }
 
 .cadoi-border {
-  border-width: 1px
+  border-width: 1px;
 }
 
 .cadoi-border-b {
-  border-bottom-width: 1px
+  border-bottom-width: 1px;
 }
 
 .cadoi-border-inherit {
-  border-color: inherit
+  border-color: inherit;
 }
 
 .cadoi-border-primary-border {
-  border-color: rgba(var(--cadoi-primary-border-rgb), 1)
+  border-color: rgba(var(--cadoi-primary-border-rgb), 1);
 }
 
 .cadoi-border-transparent {
-  border-color: transparent
+  border-color: transparent;
 }
 
 .cadoi-bg-primary-btn-bg {
-  background-color: rgba(var(--cadoi-primary-btn-bg-rgb), 1)
+  background-color: rgba(var(--cadoi-primary-btn-bg-rgb), 1);
 }
 
 .cadoi-bg-secondary-bg {
-  background-color: rgba(var(--cadoi-secondary-bg-rgb), 1)
+  background-color: rgba(var(--cadoi-secondary-bg-rgb), 1);
 }
 
 .cadoi-px-3 {
   padding-left: 12px;
-  padding-right: 12px
+  padding-right: 12px;
 }
 
 .cadoi-px-4 {
   padding-left: 16px;
-  padding-right: 16px
+  padding-right: 16px;
 }
 
 .cadoi-py-16 {
   padding-top: 64px;
-  padding-bottom: 64px
+  padding-bottom: 64px;
 }
 
 .cadoi-py-2 {
   padding-top: 8px;
-  padding-bottom: 8px
+  padding-bottom: 8px;
 }
 
 .cadoi-py-3 {
   padding-top: 12px;
-  padding-bottom: 12px
+  padding-bottom: 12px;
 }
 
 .cadoi-text-left {
-  text-align: left
+  text-align: left;
+}
+
+.cadoi-text-right {
+  text-align: right;
 }
 
 .cadoi-indent-0 {
-  text-indent: 0px
+  text-indent: 0px;
 }
 
 .cadoi-text-sm {
   font-size: 14px;
-  line-height: 20px
+  line-height: 20px;
 }
 
 .cadoi-text-xs {
   font-size: 12px;
-  line-height: 18px
+  line-height: 18px;
 }
 
 .cadoi-font-medium {
-  font-weight: 500
+  font-weight: 500;
 }
 
 .cadoi-font-semibold {
-  font-weight: 600
+  font-weight: 600;
 }
 
 .cadoi-uppercase {
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .cadoi-text-primary-btn-text {
-  color: rgba(var(--cadoi-primary-btn-text-rgb), 1)
+  color: rgba(var(--cadoi-primary-btn-text-rgb), 1);
 }
 
 .cadoi-text-primary-text {
-  color: rgba(var(--cadoi-primary-text-rgb), 1)
+  color: rgba(var(--cadoi-primary-text-rgb), 1);
 }
 
 .cadoi-text-secondary-text {
-  color: rgba(var(--cadoi-secondary-text-rgb), 1)
+  color: rgba(var(--cadoi-secondary-text-rgb), 1);
 }
 
 .cadoi-no-underline {
-  text-decoration-line: none
+  text-decoration-line: none;
 }
 
 .cadoi-transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms
+  transition-duration: 150ms;
+}
+
+@media screen and(max-width: 767px) {
+  .CadoiOrdersTable__Column:before {
+    content: attr(data-label);
+    flex-grow: 1;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 }
 
 .hover\:cadoi-bg-primary-btn-bg-hover:hover {
-  background-color: rgba(var(--cadoi-primary-btn-bg-hover-rgb), 1)
+  background-color: rgba(var(--cadoi-primary-btn-bg-hover-rgb), 1);
 }
 
 .hover\:cadoi-text-primary-btn-text-hover:hover {
-  color: rgba(var(--cadoi-primary-btn-text-hover-rgb), 1)
+  color: rgba(var(--cadoi-primary-btn-text-hover-rgb), 1);
 }
 
 .focus\:cadoi-outline-none:focus {
   outline: 2px solid transparent;
-  outline-offset: 2px
+  outline-offset: 2px;
 }
 
 .focus\:cadoi-ring-2:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
 .focus\:cadoi-ring-primary-btn-bg:focus {
-  --tw-ring-color: rgba(var(--cadoi-primary-btn-bg-rgb), 1)
+  --tw-ring-color: rgba(var(--cadoi-primary-btn-bg-rgb), 1);
 }
 
 .focus\:cadoi-ring-offset-2:focus {
-  --tw-ring-offset-width: 2px
+  --tw-ring-offset-width: 2px;
 }
 
 .disabled\:cadoi-cursor-not-allowed:disabled {
-  cursor: not-allowed
+  cursor: not-allowed;
 }
 
 .disabled\:cadoi-bg-primary-btn-bg:disabled {
-  background-color: rgba(var(--cadoi-primary-btn-bg-rgb), 1)
+  background-color: rgba(var(--cadoi-primary-btn-bg-rgb), 1);
 }
 
 .disabled\:cadoi-text-primary-btn-text:disabled {
-  color: rgba(var(--cadoi-primary-btn-text-rgb), 1)
+  color: rgba(var(--cadoi-primary-btn-text-rgb), 1);
 }
 
 .disabled\:cadoi-opacity-75:disabled {
-  opacity: 0.75
+  opacity: 0.75;
 }
 
 @media (min-width: 768px) {
+  .md\:cadoi-table-cell {
+    display: table-cell;
+  }
+
+  .md\:cadoi-table-header-group {
+    display: table-header-group;
+  }
+
+  .md\:cadoi-table-row {
+    display: table-row;
+  }
+
   .md\:cadoi-w-10\/12 {
-    width: 83.333333%
+    width: 83.333333%;
   }
 
   .md\:cadoi-w-11\/12 {
-    width: 91.666667%
+    width: 91.666667%;
   }
 
   .md\:cadoi-w-9\/12 {
-    width: 75%
+    width: 75%;
+  }
+
+  .md\:cadoi-text-left {
+    text-align: left;
   }
 }

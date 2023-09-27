@@ -14,7 +14,7 @@ const OrdersTableHead: FC<Props> = ({
   headingCol4,
 }) => {
   return (
-    <thead className="cadoi-text-xs cadoi-text-primary-text cadoi-uppercase cadoi-bg-secondary-bg">
+    <thead className="cadoi-text-xs cadoi-text-primary-text cadoi-uppercase cadoi-bg-secondary-bg cadoi-hidden md:cadoi-table-header-group">
       <tr>
         <th scope="col" className="cadoi-px-4 cadoi-py-3">
           {headingCol1}
