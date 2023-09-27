@@ -1,14 +1,12 @@
 import { FC } from 'react';
 
 interface Props {
-  orderLink: string;
   orderName: string;
   orderCreatedAt: string;
   orderTotalNetAmount: string | React.ReactNode | React.ReactNode[];
 }
 
 const OrderItemInfo: FC<Props> = ({
-  orderLink,
   orderName,
   orderCreatedAt,
   orderTotalNetAmount,
