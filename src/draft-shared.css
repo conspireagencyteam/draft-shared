@@ -1,7 +1,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@media screen and(max-width: 767px) {
+@media screen and (max-width: 767px) {
   .CadoiOrdersTable__Column:before {
     content: attr(data-label);
     @apply cadoi-text-sm cadoi-pr-5 cadoi-uppercase cadoi-grow cadoi-text-left;
