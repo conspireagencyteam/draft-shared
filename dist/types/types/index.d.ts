@@ -1,5 +1,5 @@
-export type ActionStatus = 'DISABLED' | 'IDLE' | 'HANDLING' | 'SUCCESS' | 'ERROR';
-export type JustifyContent = 'start' | 'end' | 'center' | 'space-between' | 'space-evenly';
+export type ActionStatus = "DISABLED" | "IDLE" | "HANDLING" | "SUCCESS" | "ERROR";
+export type JustifyContent = "start" | "end" | "center" | "space-between" | "space-evenly";
 export interface RGBColor {
     red: number;
     green: number;
@@ -7,7 +7,7 @@ export interface RGBColor {
 }
 export type BlockWidth = 9 | 10 | 11 | 12;
 export type SegmentWidth = 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
-export type MoveBlockSegmentDirection = 'up' | 'down';
+export type MoveBlockSegmentDirection = "up" | "down";
 export interface OrdersStyle {
     general: {
         primaryTextColor: {
@@ -39,12 +39,12 @@ export interface OrdersStyle {
         };
     };
 }
-export type OrdersBlockType = 'orders-table';
-export type OrdersSegmentKey = keyof OrdersTableBlock['segments'];
+export type OrdersBlockType = "orders-table";
+export type OrdersSegmentKey = keyof OrdersTableBlock["segments"];
 export type OrdersSegmentType = never;
 export interface OrdersTableBlock {
-    type: 'orders-table';
-    name: 'Orders table';
+    type: "orders-table";
+    name: "Orders table";
     settings: {
         mandatory: true;
         width: BlockWidth;
@@ -62,10 +62,10 @@ export interface OrdersComposition {
         blockDistribution: JustifyContent;
     };
     blocks: {
-        'orders-table': OrdersTableBlock;
+        "orders-table": OrdersTableBlock;
         [key: string]: OrdersTableBlock | undefined;
     };
-    blockOrder: (keyof OrdersComposition['blocks'])[];
+    blockOrder: (keyof OrdersComposition["blocks"])[];
 }
 export interface OrdersSettings {
     widget_settings: {
@@ -73,12 +73,12 @@ export interface OrdersSettings {
         composition: OrdersComposition;
     };
 }
-export type OrdersBlockKey = keyof OrdersComposition['blocks'];
-export type OrdersStyleColorKey = 'general.primaryTextColor.rgb' | 'general.secondaryTextColor.rgb' | 'general.primaryBgColor.rgb' | 'general.secondaryBgColor.rgb' | 'general.primaryBorderColor.rgb' | 'general.primaryBtnBgColor.rgb' | 'general.primaryBtnTextColor.rgb' | 'general.primaryBtnBgHoverColor.rgb' | 'general.primaryBtnTextHoverColor.rgb';
+export type OrdersBlockKey = keyof OrdersComposition["blocks"];
+export type OrdersStyleColorKey = "general.primaryTextColor.rgb" | "general.secondaryTextColor.rgb" | "general.primaryBgColor.rgb" | "general.secondaryBgColor.rgb" | "general.primaryBorderColor.rgb" | "general.primaryBtnBgColor.rgb" | "general.primaryBtnTextColor.rgb" | "general.primaryBtnBgHoverColor.rgb" | "general.primaryBtnTextHoverColor.rgb";
 export type OrdersStyleKey = OrdersStyleColorKey;
-export type OrdersBlockEditableSettingsKey = 'headingCol1' | 'headingCol2' | 'headingCol3' | 'headingCol4' | 'payButtonText';
+export type OrdersBlockEditableSettingsKey = "headingCol1" | "headingCol2" | "headingCol3" | "headingCol4" | "payButtonText";
 export type EmailReminders = boolean;
-export type EmailPeriod = '7' | '14' | '30';
+export type EmailPeriod = "7" | "14" | "30";
 export type InstallSetting = boolean;
 export interface DashboardSettings {
     email: EmailReminders;
