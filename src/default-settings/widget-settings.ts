@@ -1,6 +1,6 @@
 import { OrdersSettings } from "src/types";
 
-const ORDERS_DEFAULT_SETTINGS: OrdersSettings = {
+export const ORDERS_DEFAULT_SETTINGS: OrdersSettings = {
   widget_settings: {
     style: {
       general: {
@@ -94,5 +94,3 @@ const ORDERS_DEFAULT_SETTINGS: OrdersSettings = {
     },
   },
 };
-
-export default ORDERS_DEFAULT_SETTINGS;

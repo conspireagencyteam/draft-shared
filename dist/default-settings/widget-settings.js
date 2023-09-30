@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const ORDERS_DEFAULT_SETTINGS = {
+exports.ORDERS_DEFAULT_SETTINGS = void 0;
+exports.ORDERS_DEFAULT_SETTINGS = {
     widget_settings: {
         style: {
             general: {
@@ -94,4 +95,3 @@ const ORDERS_DEFAULT_SETTINGS = {
         },
     },
 };
-exports.default = ORDERS_DEFAULT_SETTINGS;
