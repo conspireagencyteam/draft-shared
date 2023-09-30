@@ -14,6 +14,8 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ORDERS_DEFAULT_SETTINGS = void 0;
 __exportStar(require("./elements"), exports);
 __exportStar(require("./types"), exports);
-__exportStar(require("./default-settings"), exports);
+var default_settings_1 = require("./default-settings");
+Object.defineProperty(exports, "ORDERS_DEFAULT_SETTINGS", { enumerable: true, get: function () { return default_settings_1.ORDERS_DEFAULT_SETTINGS; } });

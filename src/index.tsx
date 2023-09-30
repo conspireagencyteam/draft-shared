@@ -1,3 +1,3 @@
 export * from "./elements";
 export * from "./types";
-export * from "./default-settings";
+export { ORDERS_DEFAULT_SETTINGS } from "./default-settings";
