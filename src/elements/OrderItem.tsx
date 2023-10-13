@@ -11,3 +11,5 @@ const OrderItem: FC<Props> = ({ children }) => (
 );
 
 export default OrderItem;
+
+export type { Props };

@@ -9,3 +9,4 @@ export const OrdersWidget: FC<Props> = ({ children }) => (
 );
 
 export default OrdersWidget;
+export type { Props };

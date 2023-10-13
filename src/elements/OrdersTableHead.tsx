@@ -7,12 +7,7 @@ interface Props {
   headingCol4: string;
 }
 
-const OrdersTableHead: FC<Props> = ({
-  headingCol1,
-  headingCol2,
-  headingCol3,
-  headingCol4,
-}) => {
+const OrdersTableHead: FC<Props> = ({ headingCol1, headingCol2, headingCol3, headingCol4 }) => {
   return (
     <thead className="cadoi-text-xs cadoi-text-primary-text cadoi-uppercase cadoi-bg-secondary-bg cadoi-hidden md:cadoi-table-header-group">
       <tr>
@@ -25,7 +20,7 @@ const OrdersTableHead: FC<Props> = ({
         <th scope="col" className="cadoi-px-4 cadoi-py-3">
           {headingCol3}
         </th>
-        <th scope="col" className="cadoi-px-4 cadoi-py-3">
+        <th scope="col" className="cadoi-px-4 cadoi-py-3 cadoi-text-right">
           {headingCol4}
         </th>
       </tr>
