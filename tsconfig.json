@@ -1,35 +1,24 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
+    "target": "ES2019", // Specify the ECMAScript target version
+    "module": "commonjs", // Specify the module system (e.g., "commonjs", "es2015", "umd")
+    "lib": ["dom", "dom.iterable", "es2019"], // Specify the available library typings
+    "declaration": true,
+    "outDir": "dist", // Specify the output directory for compiled files
+    "declarationDir": "dist/types",
+    "esModuleInterop": true, // Enable compatibility with CommonJS modules
+    // Uncomment the following line if you're using React and JSX
     "jsx": "react-jsx",
-
-    /* Linting */
-    "strict": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-
+    "strict": true, // Enable strict type-checking options
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "baseUrl": ".",
-    "paths": {
-      "@src/*": ["src/*"]
-    },
-    "types": ["vite/client"]
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true // Ensure consistent file name casing
   },
-  "include": [
-    "src",
-    "**/*.ts", // Include TypeScript source files from the "src" directory and its subdirectories
-    "**/*.tsx",
-    "vite.config.js"
+  "include": ["src"],
+  "exclude": [
+    "node_modules", // Exclude the "node_modules" directory from compilation
+    "dist"
   ]
 }

@@ -1529,7 +1529,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     storybook: ^7.4.6
-    tailwindcss: ^3.3.2
+    tailwindcss: latest
     typescript: ^5.0.4
     vite: ^4.4.11
     vite-plugin-dts: ^3.6.0
@@ -9941,7 +9941,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.3.2":
+"tailwindcss@npm:latest":
   version: 3.3.3
   resolution: "tailwindcss@npm:3.3.3"
   dependencies:

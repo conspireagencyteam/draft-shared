@@ -10,7 +10,7 @@
     "url": "https://github.com/conspireagencyteam/draft-shared/issues"
   },
   "scripts": {
-    "build": "tsc && vite build && NODE_ENV=production tailwindcss build src/draft-shared.css -o dist/draft-shared.css",
+    "build": "tsc && NODE_ENV=production tailwindcss build src/draft-shared.css -o dist/draft-shared.css",
     "dev": "concurrently \"yarn:dev:*\"",
     "dev:vite": "vite",
     "dev:storybook": "storybook dev -p 6006",
@@ -39,7 +39,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.4.6",
-    "tailwindcss": "^3.3.2",
+    "tailwindcss": "latest",
     "typescript": "^5.0.4",
     "vite": "^4.4.11",
     "vite-plugin-dts": "^3.6.0"
