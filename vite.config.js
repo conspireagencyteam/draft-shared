@@ -27,7 +27,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: 'src/index.ts',
+      entry: 'src/index.tsx',
       name: 'DraftShared',
       formats: ['es', 'umd'],
       fileName: format => `draft-shared.${format}.js`,

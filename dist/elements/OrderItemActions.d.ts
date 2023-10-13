@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 interface Props {
     children: React.ReactNode | React.ReactNode[];
+    headingCol4?: string;
 }
-export declare const OrdersWidget: FC<Props>;
-export default OrdersWidget;
+declare const OrderItemActions: FC<Props>;
+export default OrderItemActions;
