@@ -2,24 +2,61 @@
   "name": "@conspireagencyteam/draft-shared",
   "version": "0.0.6",
   "license": "All Rights Reserved, Conspire LLC",
-  "main": "dist/elements/index.js",
-  "module": "dist/elements/index.js",
-  "types": "dist/types/index.d.ts",
-  "scripts": {
-    "build": "tsc && NODE_ENV=production tailwindcss build src/draft-shared.css -o dist/draft-shared.css"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/conspireagencyteam/draft-shared"
   },
-  "dependencies": {
-    "classname": "^0.0.0",
-    "classnames": "^2.3.2",
+  "bugs": {
+    "url": "https://github.com/conspireagencyteam/draft-shared/issues"
+  },
+  "scripts": {
+    "build": "tsc && vite build && NODE_ENV=production tailwindcss build src/draft-shared.css -o dist/draft-shared.css",
+    "dev": "concurrently \"yarn:dev:*\"",
+    "dev:vite": "vite",
+    "dev:storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-dropzone": "^14.2.3",
-    "react-hook-form": "^7.45.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.4.6",
+    "@storybook/addon-interactions": "^7.4.6",
+    "@storybook/addon-links": "^7.4.6",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.4.6",
+    "@storybook/react": "^7.4.6",
+    "@storybook/react-vite": "^7.4.6",
+    "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.6",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.1",
+    "eslint-plugin-storybook": "^0.6.15",
+    "postcss": "^8.4.31",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.4.6",
     "tailwindcss": "^3.3.2",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vite": "^4.4.11",
+    "vite-plugin-dts": "^3.6.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/draft-shared.umd.js",
+  "module": "./dist/draft-shared.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/draft-shared.es.js",
+      "require": "./dist/draft-shared.umd.js"
+    }
+  },
+  "dependencies": {
+    "classnames": "^2.3.2"
   }
 }
