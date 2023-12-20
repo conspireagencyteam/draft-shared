@@ -69,7 +69,7 @@ Default.args = {
               headingCol2="Date"
               headingCol3="Amount"
             />
-            <OrderItemActions>
+            <OrderItemActions headingCol4="Pay Now">
               <ButtonLink href="#">Pay Now</ButtonLink>
             </OrderItemActions>
           </OrderItem>
