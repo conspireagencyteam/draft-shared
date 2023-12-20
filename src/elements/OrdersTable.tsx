@@ -10,9 +10,9 @@ const blockWidths = {
 };
 
 const justifyContent = {
-  'start': 'cadoi-justify-start',
-  'end': 'cadoi-justify-end',
-  'center': 'cadoi-justify-center',
+  start: 'cadoi-justify-start',
+  end: 'cadoi-justify-end',
+  center: 'cadoi-justify-center',
   'space-between': 'cadoi-justify-between',
   'space-evenly': 'cadoi-justify-evenly',
 };
@@ -22,16 +22,11 @@ interface Props extends TableHTMLAttributes<HTMLTableElement> {
   blockWidth: BlockWidth;
 }
 
-const OrdersTable: FC<Props> = ({
-  children,
-  blockDistribution,
-  blockWidth,
-  ...attrs
-}) => {
+const OrdersTable: FC<Props> = ({ children, blockDistribution, blockWidth, ...attrs }) => {
   return (
     <div
       className={cn(
-        'cadoi-flex cadoi-flex-wrap cadoi-my-10',
+        'cadoi-flex cadoi-flex-wrap cadoi-my-10 cadoi-bg-primary-bg',
         justifyContent[blockDistribution]
       )}
     >
